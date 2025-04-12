@@ -2,7 +2,7 @@
 <section id="research" class="projects">
     <div class="container">
         <h2 class="section-title" data-lang="en">My Research</h2>
-        <h2 class="section-title" data-lang="ja">研究内容</h2>
+        <h2 class="section-title" data-lang="ja">私の研究</h2>
         <div class="project-filters">
             <div data-lang="en">
                 <button class="filter-btn active" data-filter="all">All</button>
@@ -19,7 +19,99 @@
         </div>
         <div class="carousel-container">
             <div class="carousel-track">
-                <!-- Project cards will be here -->
+                <!-- Project Card 1 -->
+                <div class="project-card carousel-item" data-category="radar">
+                    <div class="project-img">
+                        <img src="images/context.png" alt="FMCW Radar Context-Aware Monitoring"> <!-- Suggest a relevant image -->
+                    </div>
+                    <div class="project-info">
+                        <h3 data-lang="en">Context-Aware Vital Signs Monitoring with FMCW Radar</h3>
+                        <h3 data-lang="ja">FMCWレーダーによるコンテキスト認識型バイタルサインモニタリング</h3>
+                        <p data-lang="en">My core PhD research focuses on enhancing the reliability of non-contact vital sign monitoring (respiration, heart rate) using FMCW radar by integrating real-time context awareness (e.g., posture, motion) within the WiSPaC framework.</p>
+                        <p data-lang="ja">私の博士研究の中心は、WiSPaCフレームワーク内でリアルタイムのコンテキスト認識（例：姿勢、動き）を統合することにより、FMCWレーダーを用いた非接触バイタルサインモニタリング（呼吸、心拍数）の信頼性を向上させることです。</p>
+                        <div class="project-tags">
+                            <span>FMCW Radar</span>
+                            <span>Vital Signs</span>
+                            <span>Context-Awareness</span>
+                            <span>Signal Processing</span>
+                            <span>WiSPaC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#publications" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-lang="en">Related Publications</span><span data-lang="ja">関連出版物</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card carousel-item" data-category="healthcare">
+                    <div class="project-img">
+                        <img src="images/sleep_monitorin.png" alt="Radar Sleep Monitoring">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-lang="en">Non-Contact Sleep Monitoring & Analysis via Radar</h3>
+                        <h3 data-lang="ja">レーダーによる非接触睡眠モニタリングおよび分析</h3>
+                        <p data-lang="en">Investigating the use of FMCW radar for unobtrusive, continuous monitoring of sleep patterns, including respiration rate variability and body movement analysis, to potentially aid in sleep quality assessment or apnea screening.</p>
+                        <p data-lang="ja">睡眠の質の評価や無呼吸スクリーニングに役立つ可能性のある、呼吸数変動や体動分析を含む、睡眠パターンの目立たない継続的なモニタリングのためのFMCWレーダーの使用を調査しています。</p>
+                        <div class="project-tags">
+                            <span>FMCW Radar</span>
+                            <span>Sleep Monitoring</span>
+                            <span>Healthcare</span>
+                            <span>Signal Processing</span>
+                            <span>Biomedical Signals</span>
+                        </div>
+                        <div class="project-links">
+                             <a href="#publications" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-lang="en">Related Publications</span><span data-lang="ja">関連出版物</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card carousel-item" data-category="other">
+                    <div class="project-img">
+                        <img src="images/radar_cascaded.png" alt="Embedded Radar System"> <!-- Suggest a relevant image -->
+                    </div>
+                    <div class="project-info">
+                        <h3 data-lang="en">Embedded System for Real-Time Radar Signal Processing</h3>
+                        <h3 data-lang="ja">リアルタイムレーダー信号処理用組み込みシステム</h3>
+                        <p data-lang="en">Developing and optimizing signal processing algorithms (e.g., FFT, filtering, peak detection) for vital sign extraction on resource-constrained embedded platforms suitable for practical healthcare IoT devices.</p>
+                        <p data-lang="ja">実用的なヘルスケアIoTデバイスに適したリソース制約のある組み込みプラットフォーム上で、バイタルサイン抽出のための信号処理アルゴリズム（例：FFT、フィルタリング、ピーク検出）を開発および最適化しています。</p>
+                        <div class="project-tags">
+                            <span>Embedded Systems</span>
+                            <span>Real-time Processing</span>
+                            <span>FMCW Radar</span>
+                            <span>C/C++</span>
+                            <span>Optimization</span>
+                            <span>IoT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/walidbrahim" target="_blank"><i class="fab fa-github"></i> <span data-lang="en">Code Examples</span><span data-lang="ja">コード例</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card carousel-item" data-category="radar">
+                    <div class="project-img">
+                        <img src="images/ml_radar.png" alt="Machine Learning Radar Analysis"> <!-- Suggest a relevant image -->
+                    </div>
+                    <div class="project-info">
+                        <h3 data-lang="en">Machine Learning for Robust Vital Sign Estimation</h3>
+                        <h3 data-lang="ja">ロバストなバイタルサイン推定のための機械学習</h3>
+                        <p data-lang="en">Applying machine learning models to FMCW radar data to improve the accuracy and robustness of vital sign estimation, particularly in scenarios with significant noise or subject movement.</p>
+                        <p data-lang="ja">特にノイズや被験者の動きが大きいシナリオにおいて、バイタルサイン推定の精度と堅牢性を向上させるために、FMCWレーダーデータに機械学習モデルを適用しています。</p>
+                        <div class="project-tags">
+                            <span>Machine Learning</span>
+                            <span>FMCW Radar</span>
+                            <span>Signal Processing</span>
+                            <span>Python</span>
+                            <span>Data Analysis</span>
+                            <span>Vital Signs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#publications" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-lang="en">Related Publications</span><span data-lang="ja">関連出版物</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="carousel-nav">
                 <button class="carousel-button carousel-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>

@@ -118,3 +118,10 @@
         width: 260px;
     }
 }
+
+/* Remove or comment out skills-specific carousel styles */
+/* .skills .carousel-container { ... } */
+/* .skills .carousel-track { ... } */
+/* .skills .carousel-item { ... } */
+/* .skills .carousel-nav { ... } */
+/* .skills .carousel-indicators { ... } */

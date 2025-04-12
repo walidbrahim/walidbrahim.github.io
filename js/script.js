@@ -90,3 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Research Carousel Functionality
+// ... rest of the research carousel code ...

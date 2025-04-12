@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSection('publications-container', 'sections/publications.html');
     loadSection('skills-container', 'sections/skills.html');
     loadSection('awards-container', 'sections/awards.html');
-    loadSection('blog-container', 'sections/blog.html');
     loadSection('contact-container', 'sections/contact.html');
 });
 
@@ -34,8 +33,9 @@ function loadSection(containerId, sectionPath) {
                 initTypingEffect();
             }
             
-            if (containerId.includes('carousel')) {
-                initCarousels();
+            // Initialize carousels for specific sections
+            if (containerId === 'publications-container' || containerId === 'research-container') {
+                initCarousels(); 
             }
             
             // Apply language settings to newly loaded content

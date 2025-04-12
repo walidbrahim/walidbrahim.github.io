@@ -27,6 +27,9 @@ window.initializeCarousels = function() {
             indicators.appendChild(indicator);
         }
         
+        // Assign indicatorButtons before first updateCarousel call
+        const indicatorButtons = indicators.querySelectorAll('.carousel-indicator');
+        
         // Set initial position
         let currentIndex = 0;
         updateCarousel();
@@ -47,12 +50,19 @@ window.initializeCarousels = function() {
         }
         
         // Add indicator click events
-        const indicatorButtons = indicators.querySelectorAll('.carousel-indicator');
         indicatorButtons.forEach(button => {
             button.addEventListener('click', () => {
                 currentIndex = parseInt(button.getAttribute('data-index'));
                 updateCarousel();
             });
+        });
+        
+        // Add wheel event listener for mouse/trackpad scrolling
+        track.addEventListener('wheel', (event) => {
+            if (event.deltaY !== 0) { // Check if vertical scroll attempt
+                event.preventDefault(); // Prevent page from scrolling vertically
+                track.scrollLeft += event.deltaY; // Scroll horizontally instead
+            }
         });
         
         // Update carousel position and indicators
@@ -77,3 +87,5 @@ window.initializeCarousels = function() {
 document.addEventListener('DOMContentLoaded', function() {
     // This will be called by section-loader.js after sections are loaded
 });
+
+// General Carousel Logic (if any remains)

@@ -31,3 +31,37 @@
         padding: 10px;
     }
 }
+
+/* Language Switcher Styles */
+
+#language-toggle {
+    display: none; /* Hide the button for now */
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    margin-left: 10px;
+}
+
+#language-toggle:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+[data-lang="en"],
+[data-lang="ja"] {
+    /* Default display managed by JS */
+}
+
+/* Responsive adjustments if needed */
+@media screen and (max-width: 768px) {
+    #language-toggle {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100px; /* Give it some width in mobile nav */
+    }
+}

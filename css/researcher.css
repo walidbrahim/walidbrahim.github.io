@@ -22,12 +22,7 @@
     margin-bottom: 40px;
 }
 
-.publications-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
+/* Restore basic visual styles for publication items */
 .publication-item {
     display: flex;
     background: white;
@@ -244,10 +239,9 @@
 
 /* ===== RESPONSIVE DESIGN FOR RESEARCHER SECTIONS ===== */
 @media screen and (max-width: 768px) {
-    .publication-item {
-        flex-direction: column;
-    }
-    
+    /* Remove conflicting rule for flex-direction if it exists */
+    /* .publication-item { flex-direction: column; } */
+
     .publication-year {
         width: 100%;
         padding: 10px;
@@ -265,9 +259,5 @@
         width: 30px;
         height: 30px;
         font-size: 0.8rem;
-    }
-    
-    .blog-grid {
-        grid-template-columns: 1fr;
     }
 }
