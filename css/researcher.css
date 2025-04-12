@@ -1,0 +1,273 @@
+/* 
+   Additional CSS for Researcher-Specific Sections
+   Author: Brahim Walid
+   Date: April 2025
+*/
+
+/* ===== PUBLICATIONS SECTION ===== */
+.publications {
+    background: white;
+    padding: 100px 0;
+}
+
+.publications-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.publication-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.publication-item {
+    display: flex;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.publication-item:hover {
+    transform: translateY(-5px);
+}
+
+.publication-year {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.publication-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.publication-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.authors {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.journal {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.publication-links {
+    display: flex;
+    gap: 20px;
+}
+
+.publication-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.publication-links a i {
+    margin-right: 5px;
+}
+
+/* ===== AWARDS SECTION ===== */
+.awards {
+    background: var(--body-color);
+    padding: 100px 0;
+}
+
+.awards-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.awards-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.award-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+.award-item:last-child {
+    margin-bottom: 0;
+}
+
+.award-year {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.award-content {
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.award-content:hover {
+    transform: translateY(-5px);
+}
+
+.award-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.award-content p {
+    color: var(--secondary-color);
+}
+
+/* ===== BLOG SECTION ===== */
+.blog {
+    background: white;
+    padding: 100px 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog-img img {
+    transition: var(--transition);
+}
+
+.blog-card:hover .blog-img img {
+    transform: scale(1.1);
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-date {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.blog-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.blog-content p {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 500;
+    position: relative;
+}
+
+.read-more::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: var(--transition);
+}
+
+.read-more:hover::after {
+    width: 100%;
+}
+
+/* ===== RESPONSIVE DESIGN FOR RESEARCHER SECTIONS ===== */
+@media screen and (max-width: 768px) {
+    .publication-item {
+        flex-direction: column;
+    }
+    
+    .publication-year {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .awards-timeline::before {
+        left: 15px;
+    }
+    
+    .award-item {
+        padding-left: 50px;
+    }
+    
+    .award-year {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
