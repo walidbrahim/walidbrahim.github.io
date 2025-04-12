@@ -1,0 +1,33 @@
+.lang-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    background-color: #3a57d7;
+    transform: translateY(-2px);
+}
+
+/* Language specific content */
+[data-lang] {
+    display: none;
+}
+
+[data-lang="en"] {
+    display: block;
+}
+
+/* Responsive adjustments for language button */
+@media screen and (max-width: 768px) {
+    .lang-btn {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+    }
+}

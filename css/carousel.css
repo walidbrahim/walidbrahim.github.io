@@ -1,0 +1,120 @@
+/* 
+   Carousel Styles for Portfolio Website
+   Author: Brahim Walid
+   Date: April 2025
+*/
+
+/* ===== CAROUSEL CONTAINER ===== */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Make sure cards have proper width in carousel */
+.carousel-track .project-card,
+.carousel-track .publication-item,
+.carousel-track .blog-card {
+    min-width: 350px;
+    width: 350px;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* Adjust publication items for carousel */
+.carousel-track .publication-item {
+    flex-direction: column;
+    height: 100%;
+}
+
+.carousel-track .publication-item .publication-year {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/* ===== CAROUSEL NAVIGATION ===== */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.carousel-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+}
+
+.carousel-button:hover {
+    background: #3a57d7;
+    transform: translateY(-3px);
+}
+
+.carousel-button:disabled {
+    background: var(--secondary-color);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.carousel-button i {
+    font-size: 1.2rem;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.carousel-indicator.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media screen and (max-width: 768px) {
+    .carousel-track .project-card,
+    .carousel-track .publication-item,
+    .carousel-track .blog-card {
+        min-width: 280px;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-track .project-card,
+    .carousel-track .publication-item,
+    .carousel-track .blog-card {
+        min-width: 260px;
+        width: 260px;
+    }
+}
