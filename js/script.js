@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const typedTextElement = document.querySelector('.typed-text');
         if (!typedTextElement) return;
         
-        const typedTextsEn = ['PhD Researcher', 'Wireless Sensing Expert', 'FMCW Radar Specialist', 'Healthcare IoT Developer'];
+        const typedTextsEn = ['PhD Candidate', 'Wireless Sensing Researcher', 'FMCW Radar Researcher', 'Healthcare IoT Developer'];
         const typedTextsJa = ['博士研究員', '無線センシング専門家', 'FMCWレーダー専門家', 'ヘルスケアIoT開発者'];
         const typedTexts = document.documentElement.lang === 'ja' ? typedTextsJa : typedTextsEn;
         let currentTextIndex = 0;
