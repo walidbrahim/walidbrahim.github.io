@@ -1,83 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brahim Walid - PhD Researcher</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/researcher.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/language.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="description" content="Professional portfolio of Brahim Walid, PhD Candidate at Hosei University specializing in context-aware vital signs monitoring using FMCW radar">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walid Brahim</title>
+<meta name="description" content="Walid Brahim: radar sensing and machine learning researcher, PhD candidate at Hosei University, Tokyo. Contactless health monitoring with FMCW mmWave radar, sensing robots, LLM agents for research tooling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16324F;--teal:#147D83;--bg:#ffffff;--fg:#1f2933;--muted:#5b6770;--panel:#f3f7f8;--line:#e2e8ec}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#0f2238;--teal:#4fb3b9;--bg:#121619;--fg:#e6ebee;--muted:#9aa6ae;--panel:#1b2227;--line:#2a343b}}
+:root[data-theme="dark"]{--ink:#0f2238;--teal:#4fb3b9;--bg:#121619;--fg:#e6ebee;--muted:#9aa6ae;--panel:#1b2227;--line:#2a343b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.55}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header{background:var(--ink);color:#fff;padding:40px 0 32px}
+header .wrap{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+header img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.35)}
+header h1{margin:0 0 4px;font-size:2rem;font-weight:700;letter-spacing:.01em}
+header .role{margin:0 0 12px;font-size:1.1rem;opacity:.92}
+header .links a{color:#fff;opacity:.9;margin-right:14px;white-space:nowrap}
+header .links a:hover{opacity:1}
+main{padding:8px 0 48px}
+section{margin-top:36px}
+h2{font-size:1.15rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.panel{background:var(--panel);border-left:4px solid var(--teal);padding:14px 18px;border-radius:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:6px;padding:14px 16px;background:var(--bg)}
+.card h3{margin:0 0 6px;font-size:1.05rem;color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card h3{color:#cfe6e8}}
+.card p{margin:0;color:var(--fg)}
+ol.pubs{padding-left:22px;margin:0}
+ol.pubs li{margin-bottom:9px}
+ol.pubs .venue{color:var(--muted)}
+ul.plain{padding-left:20px;margin:0}
+.muted{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:18px 0 28px;color:var(--muted);font-size:.95rem}
+</style>
 </head>
 <body>
-    <!-- Include Header Section -->
-    <div id="header-container"></div>
+<header>
+  <div class="wrap">
+    <img src="assets/profile.jpg" alt="Portrait of Walid Brahim">
+    <div>
+      <h1>Walid Brahim</h1>
+      <p class="role">Radar sensing and machine learning researcher · PhD candidate, Hosei University, Tokyo</p>
+      <p class="links">
+        <a href="cv/Walid_Brahim_CV_A_web.pdf">CV (PDF)</a>
+        <a href="https://scholar.google.com/citations?user=SBGAeZkAAAAJ">Google Scholar</a>
+        <a href="https://github.com/walidbrahim">GitHub</a>
+        <a href="https://www.linkedin.com/in/brahim-walid-3a1030101">LinkedIn</a>
+        <a href="mailto:walid.brahim.6g@stu.hosei.ac.jp">Email</a>
+      </p>
+    </div>
+  </div>
+</header>
 
-    <!-- Include Hero Section -->
-    <div id="hero-container"></div>
+<main class="wrap">
+  <section id="about">
+    <h2>About</h2>
+    <div class="panel">
+      <p style="margin:0">PhD candidate at Hosei University (Prof. Jianhua Ma, Ubiquitous Computing Lab) working on contactless health monitoring with FMCW mmWave radar, after four years as an R&amp;D engineer in electronics manufacturing. Research interests: FMCW radar signal processing, physiological sensing, multi-sensor fusion, machine learning for time series, sensing robots, and LLM agents for research tooling. 18 IEEE/ACM papers, 6 as first author. Based in Tokyo.</p>
+    </div>
+  </section>
 
-    <!-- Include About Section -->
-    <div id="about-container"></div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Wi²Sense</h3>
+        <p>Radar sensing platform: room presence from point clouds, indoor localisation, respiration and heartbeat, sleep and activity. Wi²Sleep is its sleep-scenario application, with focus on trusted output, reliability and practicality.</p>
+      </div>
+      <div class="card">
+        <h3>Wi²Robot</h3>
+        <p>A ROS 2 / Nav2 sensing robot that picks a viewpoint from a scene model, drives there, settles, and triggers the radar measurement. Now exploring radar-based semantic mapping of the room (Wi²Scene).</p>
+      </div>
+      <div class="card">
+        <h3>MeridianOS</h3>
+        <p>Self-hosted research hub over a fleet of devices: local LLM inference gateway, agent policies, tool connectors, and customised coding agents with my own policies, hooks and MCP servers.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Include Research Section -->
-    <div id="research-container"></div>
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="muted" style="margin:0 0 10px">First-author papers. Full list on <a href="https://scholar.google.com/citations?user=SBGAeZkAAAAJ">Google Scholar</a>.</p>
+    <ol class="pubs">
+      <li><a href="https://doi.org/10.1109/cyberscitech68397.2025.00133">FMCW Radar Efficient IBI Estimation Using Guided VME</a> <span class="venue">· IEEE CyberSciTech 2025</span></li>
+      <li><a href="https://doi.org/10.1109/picom64201.2024.00007">Seismocardiography-Inspired Heart Activity Monitoring Using FMCW Radar</a> <span class="venue">· IEEE PICom 2024</span></li>
+      <li><a href="https://doi.org/10.1109/swc57546.2023.10448750">FMCW Radar-Enabled Eyeblink Detection: An AVMD-Based Solution</a> <span class="venue">· IEEE Smart World Congress 2023, Best Student Paper Award</span></li>
+      <li><a href="https://doi.org/10.1109/smartworld-uic-atc-scalcom-digitaltwin-pricomp-metaverse56740.2022.00118">An Integrated Platform for Synchronous and Auto-Tagged Data Collection From Diverse Sensors</a> <span class="venue">· IEEE SmartWorld/UIC 2022</span></li>
+      <li><a href="https://doi.org/10.1109/dasc/picom/cbdcom/cy55231.2022.9927992">Accuracy Assessment and Improvement of FMCW Radar-Based Vital Signs Monitoring Under Practical Scenarios</a> <span class="venue">· IEEE DASC 2022</span></li>
+      <li><a href="https://doi.org/10.1109/dasc-picom-cbdcom-cyberscitech52372.2021.00125">Recent Advances in Radar-Based Sleep Monitoring: A Review</a> <span class="venue">· IEEE DASC 2021</span></li>
+    </ol>
+    <p class="muted" style="margin:10px 0 0">Plus 12 co-authored papers on radar-based sleep posture, on-bed states, activity and fall detection, gesture recognition, and physiological signal analysis.</p>
+  </section>
 
-    <!-- Include Publications Section -->
-    <div id="publications-container"></div>
+  <section id="background">
+    <h2>Background</h2>
+    <ul class="plain">
+      <li>PhD, Computer and Information Sciences, Hosei University, Tokyo (2023 – 2027, expected).</li>
+      <li>MSc, Computer and Information Sciences, Hosei University (2020 – 2022), JICA ABE Initiative scholarship.</li>
+      <li>Senior R&amp;D engineer on smartphone production lines, Bomare Company, Algeria (2016 – 2020): equipment, networks and production-management software.</li>
+      <li>MSc and BSc in Control and Automation, University of Blida and ENST Algeria.</li>
+    </ul>
+  </section>
 
-    <!-- Include Skills Section -->
-    <div id="skills-container"></div>
+  <section id="awards">
+    <h2>Awards</h2>
+    <ul class="plain">
+      <li>Best Student Paper Award, IEEE Smart World Congress 2023 (Portsmouth, UK).</li>
+      <li>JICA ABE Initiative scholarship, 2020 – 2022.</li>
+    </ul>
+  </section>
 
-    <!-- Include Awards Section -->
-    <div id="awards-container"></div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="margin:0"><a href="mailto:walid.brahim.6g@stu.hosei.ac.jp">walid.brahim.6g@stu.hosei.ac.jp</a> · Tokyo, Japan</p>
+  </section>
+</main>
 
-    <!-- Include Contact Section -->
-    <div id="contact-container"></div>
-
-    <!-- Include Footer Section -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Brahim Walid</h3>
-                    <p data-lang="en">PhD Researcher at Hosei University</p>
-                    <p data-lang="ja">法政大学博士課程研究員</p>
-                </div>
-                <div class="footer-links">
-                    <h3 data-lang="en">Quick Links</h3>
-                    <h3 data-lang="ja">クイックリンク</h3>
-                    <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#awards">Awards</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                </div>
-                <div class="footer-social">
-                    <h3 data-lang="en">Connect</h3>
-                    <h3 data-lang="ja">接続する</h3>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/brahim-walid-3a1030101/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/walidbrahim" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://scholar.google.com/citations?hl=en&user=SBGAeZkAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Brahim Walid. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/language.js"></script>
-    <script src="js/section-loader.js"></script>
+<footer><div class="wrap">Walid Brahim · Hosei University, Graduate School of Computer and Information Sciences</div></footer>
 </body>
 </html>
